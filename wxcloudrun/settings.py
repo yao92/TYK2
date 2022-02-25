@@ -190,3 +190,9 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGS_DIR = '/data/logs/'
+
+
+# 配置静态文件的路径       BASE_DIR是项目根目录
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static")
+]
